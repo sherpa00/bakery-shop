@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cha's Bakery</title>
+</head>
+<body>
+    <header>
+        <!--HEADER NAVIGATIONS-->
+        <nav id="nav">
+            <a class="logo" href="#"><img src="logo_donut.svg"/></a>
+            <ul class="navs">
+                <li><a href="nav"><p>Home</p></a></li>
+                <li><a href="#about"><p>About</p></a></li>
+                <li><a href="#store"><p>Store</p></a></li>
+            </ul>
+            <p  class="contact"><i class="fa fa-phone"></i> +123 456 789</p>
+            <button class="cart"><i class="fa fa-shopping-cart"></i>CART</button>
+            <i id="bars" class="bars fa fa-bars"></i>
+        </nav>
+
+        <!-- shopping cart implementation-->
+        <div class="cart_container">
+            <i class="fa fa-times" id="cart_hide"></i>
+            <div class="cart_item_container">
+                <div class="cart_item">
+                    <img src="cupcake-2.jpeg"/>
+                    <div class="cart_info">
+                        <h3 class="cart_name">cart-item</h3>
+                        <p class="cart_price">$ 8</p>
+                    </div>
+                    <i class="fa fa-trash" id="del"></i>
+                </div>
+                <div class="cart_item">
+                    <img src="doughnut-2.jpeg"/>
+                    <div class="cart_info">
+                        <h3 class="cart_name">cart-item</h3>
+                        <p class="cart_price">$ 10</p>
+                    </div>
+                    <i class="fa fa-trash" id="del"></i>
+                </div>
+            </div>
+            <h3 class="total">
+                TOTAL: $<span class="total_price">18</span>
+            </h3>
+            <div class="cart_navs">
+                <button type="button" class="checkout_cart">Checkout</button>
+                <button type="button" class="clear_cart">Clear Cart</button>
+            </div>
+        </div>
+
+        <!--BANNER HEADING-->
+        <div class="heading_banner">
+            <h1 class="banner">Welcome to <span>Cha's</span>  bakery</h1>
+            <button class="banner_btn">
+                Explore
+            </button>
+        </div>
+    </header>
+    <div class="about_us" id="about">
+        <div class="about_us_des">
+            <h1 class="about_us_heading">About <span class="us">Us</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam libero debitis et consequuntur quod nisi maxime 
+                minus ex, provident rerum ab reiciendis doloribus aliquid animi eum!
+            </p>
+            <button class="about_us_btn">EXPLORE</button>
+        </div>
+        <img src="sweets-1.jpeg"/>
+    </div>
+
+    <div class="store_navs" id="store">
+        <h1 class="store_heading">
+            Our <span class="store">Store</span>
+        </h1>
+        <div class="store_buttons">
+            <button class="all">All</button>
+            <button class="cakes">Cakes</button>
+            <button class="cupcakes">Cupcakes</button>
+            <button class="sweets">Sweets</button>
+            <button class="doughnut">Doughnut</button>
+        </div>
+        <div class="store_input">
+            <i class="fa fa-search"></i>
+            <input type="text" class="inp" placeholder="item..."/>
+        </div>
+    </div>
+
+    <main class="filter">
+        <div class="img_box sweet_item">
+            <img src="sweets-1.jpeg" class="image_box" />
+            <div class="img_box_des">
+                <h2>Sweet Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$3</h2>
+            </div>
+        </div>
+        <div class="img_box cupcake_item">
+            <img src="cupcake-1.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cupcake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$5</h2>
+            </div>
+        </div>
+        <div class="img_box cake_item">
+            <img src="cake-1.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$5</h2>
+            </div>
+        </div>
+        <div class="img_box doughnut_item">
+            <img src="doughnut-1.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Doughnut Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$5</h2>
+            </div>
+        </div>
+        <div class="img_box sweet_item">
+            <img src="sweets-2.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Sweet Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$10</h2>
+            </div>
+        </div>
+        <div class="img_box cupcake_item">
+            <img src="cupcake-2.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cupcake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$10</h2>
+            </div>
+        </div>
+        <div class="img_box cake_item">
+            <img src="cake-2.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$10</h2>
+            </div>
+        </div>
+        <div class="img_box doughnut_item">
+            <img src="doughnut-2.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Doughnut Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$10</h2>
+            </div>
+        </div>
+        <div class="img_box sweet_item">
+            <img src="sweets-3.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Sweet Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$15</h2>
+            </div>
+        </div>
+        <div class="img_box cupcake_item">
+            <img src="cupcake-3.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cupcake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$15</h2>
+            </div>
+        </div>
+        <div class="img_box cake_item">
+            <img src="cake-3.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Cake Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$15</h2>
+            </div>
+        </div>
+        <div class="img_box doughnut_item">
+            <img src="doughnut-3.jpeg" class="image_box"/>
+            <div class="img_box_des">
+                <h2>Doughnut Item</h2>
+                <i class="fa fa-cart-plus"></i>
+                <h2>$15</h2>
+            </div>
+        </div>
+    </main>
+    <div class="model_container">
+        <div class="close"><i class="fa fa-window-close"></i></div>
+        <div class="model_holder">
+            <div class="prev"><i class="fa fa-chevron-circle-left"></i></div>
+            <div class="model_img"></div>
+            <div class="next"><i class="fa fa-chevron-circle-right"></i></div>
+        </div>
+    </div>
+    <div class="cart_message">
+        <i class="fa fa-check-circle"></i>
+        <h2 class="msg"></h2>
+    </div>
+    <script src="app.js"></script>
+    <script src="app_model.js"></script>
+    <script src="shop_cart.js"></script>
+</body>
+</html>
